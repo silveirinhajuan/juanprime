@@ -16,17 +16,17 @@
 </p>
 
 
-## 📋Description
+## 📋 Description
 
 JuanPrime is a machine learning project built with PyTorch, focusing on creating a Discord bot. It utilizes natural language processing techniques to provide interactive bot functionalities within the Discord platform.
 
-## ✅Features
+## ✅ Features
 
 - Timeout Discord
 - Answer only when called
 - Unpublished model
 
-## ⚙Prerequisites
+## ⚙ Prerequisites
 
 Before getting started, ensure that you have the following dependencies installed:
 
@@ -36,7 +36,7 @@ Before getting started, ensure that you have the following dependencies installe
 - numpy==1.24.3
 - torch~=2.0.1
 ```
-## 💻Installation
+## 💻 Installation
 
 Follow the steps below to install and run JuanPrime:
 
