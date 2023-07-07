@@ -3,6 +3,8 @@ from brain import response_setence, bot_name
 from config import mytoken_discord
 import asyncio
 
+#TODO make a wellcome to new members
+
 # This variable says whether the bot should respond to chat messages or not
 should_response = False
 bot_name = bot_name

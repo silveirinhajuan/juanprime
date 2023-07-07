@@ -1,3 +1,6 @@
+#TODO make a train method more efficient
+#TODO add new tags on train file -> intents.json
+
 import json
 import numpy as np
 
