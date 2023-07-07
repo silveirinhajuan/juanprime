@@ -1,0 +1,5 @@
+nltk==3.8.1
+numpy==1.24.3
+torch~=2.0.1
+fastapi~=0.100.0
+pydantic~=2.0.2
