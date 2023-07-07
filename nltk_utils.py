@@ -1,7 +1,7 @@
 import nltk
 from nltk.stem.porter import PorterStemmer
 import numpy as np
-# nltk.download('punkt')  # <- This is to download methods of nltk, if not the lib don't work
+nltk.download('punkt')  # <- This is to download methods of nltk, if not the lib don't work
 
 stemmer = PorterStemmer()
 
