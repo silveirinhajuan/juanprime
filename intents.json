@@ -24,6 +24,33 @@
       ]
     },
     {
+      "tag": "bot_calls",
+      "patterns": [
+        "hey Juan Prime",
+        "ei Juan Prime",
+        "ok Juan Prime",
+        "olá Juan Prime",
+        "Juan Prime, você está aí?",
+        "oi Juan Prime",
+        "chamei o Juan Prime",
+        "preciso da sua ajuda, Juan Prime",
+        "Juan Prime, tenho uma pergunta",
+        "alguém chamou o Juan Prime?"
+      ],
+      "responses": [
+        "Oi! Estou aqui, pronto para ajudar.",
+        "Sim, estou aqui! O que posso fazer por você?",
+        "Olá! Sou o Juan Prime, seu assistente virtual brincalhão.",
+        "Estou aqui, à sua disposição. Como posso te ajudar?",
+        "Presente! O que você precisa?",
+        "Juan Prime chamado com sucesso! Como posso auxiliar?",
+        "Aqui estou eu! Em que posso ser útil?",
+        "Juan Prime ativado! Estou pronto para responder suas perguntas.",
+        "Alguém disse meu nome? Estou aqui!",
+        "Sim, sou eu, Juan Prime. Como posso ser útil?"
+      ]
+    },    
+    {
       "tag": "jokes",
       "patterns": [
         "me conta uma piada",

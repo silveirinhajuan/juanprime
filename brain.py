@@ -27,24 +27,20 @@ print("Let's try use the bot! Type 'quit' to exit.")
 
 
 def response_setence(setence):
-    if setence in 'stop':
-        return 'Beleza, depois eu volto ein😈👾'
+    setence = tokenize(setence)
+    X = bag_of_words(setence, all_words)
+    X = X.reshape(1, X.shape[0])
+    X = torch.from_numpy(X)
+    
+    output = model(X)
+    _, predicted = torch.max(output, dim=1)
+    tag = tags[predicted.item()]
+    
+    probs = torch.softmax(output, dim=1)
+    prob = probs[0][predicted.item()]
+    if prob.item() > 0.50:
+        for intent in intents['intents']:
+            if tag == intent['tag']:
+                return random.choice(intent['responses'])
     else:
-        setence = tokenize(setence)
-        X = bag_of_words(setence, all_words)
-        X = X.reshape(1, X.shape[0])
-        X = torch.from_numpy(X)
-
-        output = model(X)
-        _, predicted = torch.max(output, dim=1)
-        tag = tags[predicted.item()]
-
-        probs = torch.softmax(output, dim=1)
-        prob = probs[0][predicted.item()]
-
-        if prob.item() > 0.50:
-            for intent in intents['intents']:
-                if tag == intent['tag']:
-                    return random.choice(intent['responses'])
-        else:
-            print(f"The setence i dont understand. setence: {setence}")
+        print(f"The setence i dont understand. setence: {setence}")
